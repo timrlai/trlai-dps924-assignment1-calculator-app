@@ -1,18 +1,16 @@
 package com.example.trlaidps924assignment1;
 
-import android.widget.Button;
-
 import java.util.ArrayList;
 
 public class Calculator {
-    ArrayList<String> characters = new ArrayList<String>(20);
+    ArrayList<String> characters = new ArrayList<>(20);
 
     void push(String value) {
         characters.add(value);
     }
 
     int performCalculation(int leftNum, String operator, int rightNum) {
-        int result = 0;
+        int result;
 
         switch (operator) {
             case "+":

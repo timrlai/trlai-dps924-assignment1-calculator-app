@@ -7,19 +7,17 @@
 ```java
 package com.example.trlaidps924assignment1;
 
-import android.widget.Button;
-
 import java.util.ArrayList;
 
 public class Calculator {
-    ArrayList<String> characters = new ArrayList<String>(20);
+    ArrayList<String> characters = new ArrayList<>(20);
 
     void push(String value) {
         characters.add(value);
     }
 
     int performCalculation(int leftNum, String operator, int rightNum) {
-        int result = 0;
+        int result;
 
         switch (operator) {
             case "+":
@@ -63,14 +61,14 @@ public class Calculator {
                     String middleChar = characters.remove(0);
                     String rightChar = characters.remove(0);
 
-                     if (leftChar.matches("[0-9]") && middleChar.matches("[+\\-*/%]|(pow)|(max)|(min)") && rightChar.matches("[0-9]")) {
-                         int leftNum = Integer.parseInt(leftChar);
-                         int rightNum = Integer.parseInt(rightChar);
+                    if (leftChar.matches("[0-9]") && middleChar.matches("[+\\-*/%]|(pow)|(max)|(min)") && rightChar.matches("[0-9]")) {
+                        int leftNum = Integer.parseInt(leftChar);
+                        int rightNum = Integer.parseInt(rightChar);
 
-                         result = performCalculation(leftNum, middleChar, rightNum);
-                     } else {
-                         return result;
-                     }
+                        result = performCalculation(leftNum, middleChar, rightNum);
+                    } else {
+                        return result;
+                    }
                 } else {
                     String middleChar = characters.remove(0);
                     String rightChar = characters.remove(0);
@@ -368,7 +366,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/one_btn"
@@ -382,7 +381,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/two_btn"
@@ -395,7 +395,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/three_btn"
@@ -408,7 +409,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/plus_btn"
@@ -421,14 +423,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/four_btn"
@@ -442,7 +446,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/five_btn"
@@ -455,7 +460,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/six_btn"
@@ -468,7 +474,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/minus_btn"
@@ -481,14 +488,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/seven_btn"
@@ -502,7 +511,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/eight_btn"
@@ -515,7 +525,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/nine_btn"
@@ -528,7 +539,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/multiply_btn"
@@ -541,14 +553,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/clear_btn"
@@ -562,7 +576,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/zero_btn"
@@ -575,7 +590,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/equals_btn"
@@ -588,7 +604,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/divide_btn"
@@ -601,14 +618,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center">
+            android:gravity="center"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/advanced_btn"
@@ -621,7 +640,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textFontWeight="700"
                 android:textColor="@color/white"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -643,7 +663,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             android:orientation="horizontal"
             android:background="@color/light_teal"
             android:outlineAmbientShadowColor="@color/darkest_teal"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/mod_btn"
@@ -657,7 +678,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/pow_btn"
@@ -670,7 +692,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/max_btn"
@@ -683,7 +706,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/min_btn"
@@ -696,7 +720,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
     </LinearLayout>

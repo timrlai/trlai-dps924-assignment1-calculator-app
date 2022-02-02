@@ -36,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/one_btn"
@@ -50,7 +51,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/two_btn"
@@ -63,7 +65,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/three_btn"
@@ -76,7 +79,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/plus_btn"
@@ -89,14 +93,16 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/four_btn"
@@ -110,7 +116,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/five_btn"
@@ -123,7 +130,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/six_btn"
@@ -136,7 +144,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/minus_btn"
@@ -149,14 +158,16 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/seven_btn"
@@ -170,7 +181,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/eight_btn"
@@ -183,7 +195,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/nine_btn"
@@ -196,7 +209,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/multiply_btn"
@@ -209,14 +223,16 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/clear_btn"
@@ -230,7 +246,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/zero_btn"
@@ -243,7 +260,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/equals_btn"
@@ -256,7 +274,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/divide_btn"
@@ -269,14 +288,16 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center">
+            android:gravity="center"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/advanced_btn"
@@ -289,7 +310,8 @@
                 android:textFontWeight="700"
                 android:textColor="@color/white"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -311,7 +333,8 @@
             android:orientation="horizontal"
             android:background="@color/light_teal"
             android:outlineAmbientShadowColor="@color/darkest_teal"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/mod_btn"
@@ -325,7 +348,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/pow_btn"
@@ -338,7 +362,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/max_btn"
@@ -351,7 +376,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
 
             <Button
                 android:id="@+id/min_btn"
@@ -364,7 +390,8 @@
                 android:textColor="@color/white"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
 
     </LinearLayout>
