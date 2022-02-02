@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assignment1 - Calculator</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_4">+</string>
+    <string name="btn_5">4</string>
+    <string name="btn_6">5</string>
+    <string name="btn_7">6</string>
+    <string name="btn_8">-</string>
+    <string name="btn_9">7</string>
+    <string name="btn_10">8</string>
+    <string name="btn_11">9</string>
+    <string name="btn_12">*</string>
+    <string name="btn_13">C</string>
+    <string name="btn_14">0</string>
+    <string name="btn_15">=</string>
+    <string name="btn_16">/</string>
+    <string name="advanced_btn">Advanced - Scientific</string>
+    <string name="standard_btn">Standard</string>
+    <string name="advanced_menu_btn_1">%</string>
+    <string name="advanced_menu_btn_2">Pow</string>
+    <string name="advanced_menu_btn_3">Max</string>
+    <string name="advanced_menu_btn_4">Min</string>
+</resources>
